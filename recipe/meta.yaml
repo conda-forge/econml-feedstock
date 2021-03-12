@@ -1,5 +1,5 @@
 {% set name = "econml" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/econml-{{ version }}.tar.gz
-  sha256: fa13815f275729c49a0e69f9ab691d1d9dbbb91ba799647419abd6ab93abb9f8
+  sha256: 2e57ab4eb710ca2d5e811fc6a5efb66cf4dd649f0d63cb3c5700ebe2150e6f05
 
 build:
   number: 0
