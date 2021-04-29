@@ -3,7 +3,7 @@ About econml
 
 Home: https://github.com/Microsoft/EconML
 
-Package license: Apache-2.0
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/econml-feedstock/blob/master/LICENSE.txt)
 
@@ -197,6 +197,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@MohammedAjilQC](https://github.com/MohammedAjilQC/)
+* [@manuelwalserqc](https://github.com/manuelwalserqc/)
 * [@norbertstoopqc](https://github.com/norbertstoopqc/)
+* [@xhochy](https://github.com/xhochy/)
 
