@@ -1,5 +1,5 @@
 {% set name = "econml" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/econml-{{ version }}.tar.gz
-  sha256: 9e4fa61b5ef4bcd49138ed98ebedb1ac900ee18b679a393859fc7050f2846e2a
+  sha256: 5b4d437d504b016807870d304dcb70ad8f78e77718bb8ceed86cac9511b20d4f
 
 build:
   number: 0
@@ -37,14 +37,13 @@ requirements:
     - python
     - scikit-learn >=0.24
     - scipy >1.4.0
-    - shap ~=0.38.1
+    - shap 0.38.1
     - sparse
     - statsmodels >=0.9
 
 test:
   imports:
     - econml
-    - econml.data
   commands:
     - pip check
   requires:
@@ -53,7 +52,7 @@ test:
 about:
   home: https://github.com/Microsoft/EconML
   summary: This package contains several methods for calculating Conditional Average Treatment Effects
-  license: Apache-2.0
+  license: BSD-3-Clause
   license_file: LICENSE
 
 extra:
