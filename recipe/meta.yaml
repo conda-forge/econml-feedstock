@@ -1,5 +1,5 @@
 {% set name = "econml" %}
-{% set version = "0.9.2" %}
+{% set version = "0.10.0" %}
 
 
 package:
