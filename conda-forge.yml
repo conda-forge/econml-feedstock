@@ -1,6 +1,6 @@
-test_on_native_only: true
+bot:
+  run_deps_from_wheel: true
 build_platform:
   osx_arm64: osx_64
 conda_forge_output_validation: true
-bot:
-  run_deps_from_wheel: true
+test_on_native_only: true

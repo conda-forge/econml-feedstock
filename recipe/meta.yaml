@@ -11,7 +11,7 @@ source:
   sha256: 4a8196d6c785e9e0e42b2fa35dd058eb37166c75dcdb90ada953feea6fbb854b
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -38,7 +38,7 @@ requirements:
     - python
     - scikit-learn >=0.24
     - scipy >1.4.0
-    - shap 0.38.1
+    - shap >=0.38.1,<0.40
     - sparse
     - statsmodels >=0.9
 
