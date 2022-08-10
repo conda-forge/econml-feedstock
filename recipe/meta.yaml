@@ -1,5 +1,5 @@
 {% set name = "econml" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/econml-{{ version }}.tar.gz
-  sha256: 4a8196d6c785e9e0e42b2fa35dd058eb37166c75dcdb90ada953feea6fbb854b
+  sha256: 9060e54f46657a62c67e26a6755feb0531106b24e7444fa4c86b8139c89cf9b9
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
     - pip
     - python
   run:
-    - dowhy
+    - dowhy <0.8
     - lightgbm
     - python-graphviz
     - joblib >=0.13.0
@@ -36,11 +36,11 @@ requirements:
     - numpy
     - pandas
     - python
-    - scikit-learn >=0.24
+    - scikit-learn >0.22.0,<1.2
     - scipy >1.4.0
-    - shap >=0.38.1,<0.40
+    - shap >=0.38.1,<0.41.0
     - sparse
-    - statsmodels >=0.9
+    - statsmodels >=0.10
 
 test:
   imports:
