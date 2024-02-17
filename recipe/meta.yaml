@@ -1,5 +1,5 @@
 {% set name = "econml" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/econml-{{ version }}.tar.gz
-  sha256: ca5eac709b810f7a423f22510a837795e29373ae6d59a8dfc7b6a743fcca47ae
+  sha256: de7a168133d6a92fe967fce79172bdc9c298de9b603afa0fb868dc1797323aff
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -34,11 +34,11 @@ requirements:
     - joblib >=0.13.0
     - numba !=0.42.1
     - numpy
-    - pandas
+    - pandas >1.0
     - python
-    - scikit-learn >0.22.0,<1.3
+    - scikit-learn >=1.0,<1.5
     - scipy >1.4.0
-    - shap >=0.38.1,<0.42.0
+    - shap >=0.38.1,<0.44.0
     - sparse
     - statsmodels >=0.10
 
