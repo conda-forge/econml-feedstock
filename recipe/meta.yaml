@@ -7,14 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/econml-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/econml-{{ version }}.tar.gz
   sha256: 0aa22baf38ad3a38b1ae8c08bc868d4aa04dabda334352661e7d330eb3c2c531
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  # The older shap versions are not available for Python 3.12
-  skip: true  # [py>=312]
 
 requirements:
   build:
@@ -30,6 +28,7 @@ requirements:
     - numpy
     - pip
     - python
+    - setuptools
   run:
     - packaging
     - dowhy <0.8
