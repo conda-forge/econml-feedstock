@@ -13,8 +13,6 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  # The older shap versions are not available for Python 3.12
-  skip: true  # [py>=312]
 
 requirements:
   build:
