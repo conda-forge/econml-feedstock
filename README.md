@@ -3,9 +3,9 @@ About econml-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/econml-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Microsoft/EconML
+Home: https://github.com/py-why/EconML
 
-Package license: BSD-3-Clause
+Package license: MIT AND BSD-3-Clause
 
 Summary: This package contains several methods for calculating Conditional Average Treatment Effects
 
@@ -269,5 +269,6 @@ Feedstock Maintainers
 
 * [@manuelwalserqc](https://github.com/manuelwalserqc/)
 * [@norbertstoopqc](https://github.com/norbertstoopqc/)
+* [@pavelzw](https://github.com/pavelzw/)
 * [@xhochy](https://github.com/xhochy/)
 
