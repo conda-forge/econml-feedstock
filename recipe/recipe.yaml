@@ -34,6 +34,7 @@ requirements:
     - python
     - setuptools
   run:
+    - python
     - numpy
     - scikit-learn >=1.0,<1.7
     - sparse
