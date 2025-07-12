@@ -36,20 +36,17 @@ requirements:
     - python
     - setuptools
   run:
-    - packaging
-    - dowhy <0.8
-    - lightgbm
-    - python-graphviz
-    - joblib >=0.13.0
-    - numba !=0.42.1
     - numpy
-    - pandas >1.0
-    - python
     - scikit-learn >=1.0,<1.7
-    - scipy >1.4.0
-    - shap >=0.38.1,<0.49.0
     - sparse
+    - joblib >=0.13.0
     - statsmodels >=0.10
+    - pandas >1.0
+    - shap >=0.38.1,<0.49.0
+    - lightgbm
+    - packaging
+  run_constrained:
+    - dowhy <0.13
 
 tests:
   - python:
@@ -63,12 +60,13 @@ tests:
 
 about:
   summary: This package contains several methods for calculating Conditional Average Treatment Effects
-  license: BSD-3-Clause
+  license: MIT AND BSD-3-Clause
   license_file: LICENSE
-  homepage: https://github.com/Microsoft/EconML
+  homepage: https://github.com/py-why/EconML
 
 extra:
   recipe-maintainers:
     - manuelwalserqc
     - norbertstoopqc
     - xhochy
+    - pavelzw
