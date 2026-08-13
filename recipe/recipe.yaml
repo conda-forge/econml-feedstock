@@ -1,15 +1,14 @@
 schema_version: 1
 
 context:
-  name: econml
-  version: 0.17.0
+  version: "0.17.0"
 
 package:
-  name: ${{ name|lower }}
+  name: econml
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/econml-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/e/econml/econml-${{ version }}.tar.gz
   sha256: b637b6166d290203775954c3af58c45a728a932315df3c334a625ab94e6e0b30
 
 build:
@@ -35,7 +34,8 @@ requirements:
     - setuptools
   run:
     - python
-    - numpy
+    - numba >=0.60.0
+    - scipy >=1.13.1
     - scikit-learn >=1.6.0,<1.10
     - sparse >=0.15.4
     - joblib >=1.4.2
@@ -44,8 +44,6 @@ requirements:
     - shap >=0.46.0
     - lightgbm >=4.5.0
     - packaging >=24.2
-    - scipy >=1.13.1
-    - numba >=0.60.0
   run_constraints:
     - dowhy <0.13
 
@@ -53,11 +51,7 @@ tests:
   - python:
       imports:
         - econml
-  - requirements:
-      run:
-        - pip
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: This package contains several methods for calculating Conditional Average Treatment Effects
