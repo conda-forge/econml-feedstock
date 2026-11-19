@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.17.0"
+  version: 0.17.1
 
 package:
   name: econml
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/econml/econml-${{ version }}.tar.gz
-  sha256: b637b6166d290203775954c3af58c45a728a932315df3c334a625ab94e6e0b30
+  sha256: 5175a9d8b78eccb1abb2faa568704aa63683a100ebc979d1f3488469cdd397a9
 
 build:
   number: 0
@@ -45,6 +45,7 @@ requirements:
     - shap >=0.46.0
     - lightgbm >=4.5.0
     - packaging >=24.2
+    - numpy
   run_constraints:
     - dowhy <0.13
 
